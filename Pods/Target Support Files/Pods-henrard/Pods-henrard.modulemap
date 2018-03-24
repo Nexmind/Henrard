@@ -1,0 +1,6 @@
+framework module Pods_henrard {
+  umbrella header "Pods-henrard-umbrella.h"
+
+  export *
+  module * { export * }
+}
