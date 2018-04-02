@@ -49,4 +49,23 @@ extension UIColor {
     static var emerald: UIColor {
         return UIColor(red:0.18, green:0.80, blue:0.44, alpha:1.0)
     }
+    
+    // Orange
+    static var pumpkin: UIColor {
+        return UIColor(red:0.83, green:0.33, blue:0.00, alpha:1.0)
+    }
+    
+    static var carrot: UIColor {
+        return UIColor(red:0.90, green:0.49, blue:0.13, alpha:1.0)
+    }
+    
+    // Gray
+    static var asbestos: UIColor {
+        return UIColor(red:0.50, green:0.55, blue:0.55, alpha:1.0)
+    }
+    
+    // White
+    static var cloud: UIColor {
+        return UIColor(red:0.93, green:0.94, blue:0.95, alpha:1.0)
+    }
 }

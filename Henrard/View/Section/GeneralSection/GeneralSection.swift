@@ -26,7 +26,10 @@ class GeneralSection: Section, SectionProtocol {
         let cell = tableView.dequeueReusableCell(withIdentifier: GeneralCell.describe) as! GeneralCell
         cell.selectionStyle = .none
         cell.set(with: self.developerViewModel, rowNumber: row)
-
         return cell
+    }
+    
+    override func heightForSection() -> CGFloat {
+        return 0
     }
 }

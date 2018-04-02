@@ -16,6 +16,10 @@ class Section {
         self.type = type
     }
     
+    var image: UIImage? {
+        return nil
+    }
+    
     func numberOfRows() -> Int {
         // To be implemented in subclass
         return 0
@@ -24,6 +28,19 @@ class Section {
     func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
         // To be implemented in subclass
         return tableView.dequeueReusableCell(withIdentifier: "")!
+    }
+    
+    func didSelect(indexPath: IndexPath, in tableView: UITableView) {
+        // To be implemented in subclass
+    }
+    
+    func heightForSection() -> CGFloat {
+        return 50
+    }
+    func viewForSection() -> UIView? {
+        let view = SectionHeaderView()
+        view.set(with: self)
+        return view
     }
     
     

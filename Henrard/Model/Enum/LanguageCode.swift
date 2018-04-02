@@ -19,8 +19,8 @@ enum LanguageCode: String {
         switch(value) {
         case "FRENCH": return .french
         case "ENGLISH": return .english
-        case "SPANISH": return .dutch
-        case "DUTCH": return .spanish
+        case "SPANISH": return .spanish
+        case "DUTCH": return .dutch
         default: print("LANGUAGE ENUM: unknown value"); return .none
         }
     }

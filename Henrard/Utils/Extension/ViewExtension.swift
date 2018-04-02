@@ -12,11 +12,6 @@ extension UIView {
     
     /// Round view if it's a square
     func round() {
-        let height = self.bounds.size.height
-        let width = self.bounds.size.width
-        if height != width {
-            fatalError("Cannot round a view that are not a square")
-        }
         self.layer.cornerRadius = self.bounds.size.height / 2
     }
     

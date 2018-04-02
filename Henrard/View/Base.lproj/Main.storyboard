@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vAU-pF-WlL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,75 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="XZ5-Rf-Eiy">
+            <objects>
+                <viewController id="vAU-pF-WlL" customClass="WelcomeViewController" customModule="henrard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cG6-0j-oBk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="Wb6-gs-0Iv">
+                                <rect key="frame" x="97" y="125" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="2lH-ae-PyZ"/>
+                                    <constraint firstAttribute="width" constant="180" id="BZD-xq-d2x"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um9-Sj-y40">
+                                <rect key="frame" x="159" y="322" width="56.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" red="0.93844436809999998" green="0.93844436809999998" blue="0.93844436809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I'm Julien Henrard and welcome on my personal app !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3g-XA-PNe">
+                                <rect key="frame" x="46" y="352" width="283" height="76"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.93844436809999998" green="0.93844436809999998" blue="0.93844436809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k3-s0-Iwt" customClass="LoadingButton" customModule="henrard" customModuleProvider="target">
+                                <rect key="frame" x="82" y="571" width="210" height="45"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.32941176470588235" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="Fxy-Er-6XN"/>
+                                    <constraint firstAttribute="height" constant="45" id="csb-BT-zWs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.93844436809999998" green="0.93844436809999998" blue="0.93844436809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpButtonContinue:" destination="vAU-pF-WlL" eventType="touchUpInside" id="gZQ-XL-o7n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R3g-XA-PNe" firstAttribute="leading" secondItem="Zji-GM-yqK" secondAttribute="leading" constant="46" id="4mc-AS-uqh"/>
+                            <constraint firstItem="5k3-s0-Iwt" firstAttribute="centerX" secondItem="Zji-GM-yqK" secondAttribute="centerX" id="8Kp-14-TLJ"/>
+                            <constraint firstItem="um9-Sj-y40" firstAttribute="centerY" secondItem="cG6-0j-oBk" secondAttribute="centerY" id="AH2-rQ-zTh"/>
+                            <constraint firstItem="um9-Sj-y40" firstAttribute="centerX" secondItem="cG6-0j-oBk" secondAttribute="centerX" id="Eod-JG-CgN"/>
+                            <constraint firstItem="um9-Sj-y40" firstAttribute="top" secondItem="Wb6-gs-0Iv" secondAttribute="bottom" constant="17" id="HjC-rP-Nff"/>
+                            <constraint firstItem="R3g-XA-PNe" firstAttribute="top" secondItem="um9-Sj-y40" secondAttribute="bottom" constant="7" id="VQf-Bd-vre"/>
+                            <constraint firstItem="Zji-GM-yqK" firstAttribute="bottom" secondItem="5k3-s0-Iwt" secondAttribute="bottom" constant="51" id="aC6-AM-ajc"/>
+                            <constraint firstItem="Zji-GM-yqK" firstAttribute="trailing" secondItem="R3g-XA-PNe" secondAttribute="trailing" constant="46" id="woO-hG-Gmd"/>
+                            <constraint firstItem="Wb6-gs-0Iv" firstAttribute="centerX" secondItem="Zji-GM-yqK" secondAttribute="centerX" id="yNP-Z7-xhB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zji-GM-yqK"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonContinue" destination="5k3-s0-Iwt" id="A90-Hw-Cp9"/>
+                        <outlet property="imgWelcome" destination="Wb6-gs-0Iv" id="hfV-IX-jW4"/>
+                        <outlet property="lblDescription" destination="R3g-XA-PNe" id="pZC-7W-44E"/>
+                        <outlet property="lblHello" destination="um9-Sj-y40" id="UWD-6x-gyf"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="WelcomeToMain" id="hEG-A8-Hzz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwQ-aZ-LCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791.20000000000005" y="89.505247376311857"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -26,4 +95,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="90.404797601199405"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="welcome" width="180" height="180"/>
+    </resources>
 </document>

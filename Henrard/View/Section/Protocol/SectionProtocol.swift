@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol SectionProtocol {
+@objc protocol SectionProtocol {
     func numberOfRows() -> Int
     func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell
 }

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0EFECA591FD83D018F908443 /* Pods_henrardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4B40FF118BED8E731E703C /* Pods_henrardUITests.framework */; };
 		11164405F5B1141EF0AC469B /* Pods_henrardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474280778730FB98445EE8F6 /* Pods_henrardTests.framework */; };
+		471E4D8220717CAE00E0C70E /* PopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8120717CAE00E0C70E /* PopUpController.swift */; };
+		471E4D8420717E8A00E0C70E /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8320717E8A00E0C70E /* SectionHeaderView.swift */; };
+		471E4D8620717E9F00E0C70E /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */; };
+		471E4D8B2072931600E0C70E /* SkillPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8A2072931600E0C70E /* SkillPopUpViewController.swift */; };
+		471E4D8D207294D800E0C70E /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471E4D8C207294D800E0C70E /* PopUp.storyboard */; };
 		4794396D2061AD6200C3C868 /* GeneralSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4794396C2061AD6200C3C868 /* GeneralSection.swift */; };
 		479439712061AE2800C3C868 /* SectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479439702061AE2800C3C868 /* SectionProtocol.swift */; };
 		479439742061AEF800C3C868 /* GeneralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479439732061AEF800C3C868 /* GeneralCell.xib */; };
@@ -21,12 +26,14 @@
 		47943989206303AC00C3C868 /* SkillSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47943988206303AC00C3C868 /* SkillSection.swift */; };
 		4794398C2064504E00C3C868 /* Technology.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4794398A206426A500C3C868 /* Technology.xcassets */; };
 		4794398F20645E6300C3C868 /* LanguageSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4794398E20645E6300C3C868 /* LanguageSection.swift */; };
-		479439932065B7F000C3C868 /* MXScrollContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479439922065B7F000C3C868 /* MXScrollContainerController.swift */; };
 		479439952065C90300C3C868 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479439942065C90300C3C868 /* ImageExtension.swift */; };
 		479439972065CACA00C3C868 /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479439962065CACA00C3C868 /* LanguageViewModel.swift */; };
 		479439992065CB4F00C3C868 /* Flag.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479439982065CB4F00C3C868 /* Flag.xcassets */; };
 		4794399C2065CE1400C3C868 /* LanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4794399B2065CE1400C3C868 /* LanguageCell.xib */; };
 		4794399F2065CF5400C3C868 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4794399D2065CF1000C3C868 /* LanguageCell.swift */; };
+		479439A5206AA99400C3C868 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479439A4206AA99400C3C868 /* WelcomeViewController.swift */; };
+		479983F4206AAB5D00BC3227 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479983F3206AAB5D00BC3227 /* LoadingButton.swift */; };
+		479983F7206AACAC00BC3227 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479983F6206AACAC00BC3227 /* Segue.swift */; };
 		47FCBECD205EFC2D0014F2A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCBECC205EFC2D0014F2A4 /* AppDelegate.swift */; };
 		47FCBECF205EFC2D0014F2A4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCBECE205EFC2D0014F2A4 /* MainViewController.swift */; };
 		47FCBED2205EFC2D0014F2A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FCBED0205EFC2D0014F2A4 /* Main.storyboard */; };
@@ -83,6 +90,11 @@
 
 /* Begin PBXFileReference section */
 		1034280A6ED6567F07A85E73 /* Pods-henrardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-henrardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-henrardTests/Pods-henrardTests.release.xcconfig"; sourceTree = "<group>"; };
+		471E4D8120717CAE00E0C70E /* PopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpController.swift; sourceTree = "<group>"; };
+		471E4D8320717E8A00E0C70E /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		471E4D8A2072931600E0C70E /* SkillPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillPopUpViewController.swift; sourceTree = "<group>"; };
+		471E4D8C207294D800E0C70E /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
 		474280778730FB98445EE8F6 /* Pods_henrardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_henrardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4794396C2061AD6200C3C868 /* GeneralSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSection.swift; sourceTree = "<group>"; };
 		479439702061AE2800C3C868 /* SectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionProtocol.swift; sourceTree = "<group>"; };
@@ -96,12 +108,14 @@
 		47943988206303AC00C3C868 /* SkillSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillSection.swift; sourceTree = "<group>"; };
 		4794398A206426A500C3C868 /* Technology.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Technology.xcassets; sourceTree = "<group>"; };
 		4794398E20645E6300C3C868 /* LanguageSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSection.swift; sourceTree = "<group>"; };
-		479439922065B7F000C3C868 /* MXScrollContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXScrollContainerController.swift; sourceTree = "<group>"; };
 		479439942065C90300C3C868 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		479439962065CACA00C3C868 /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
 		479439982065CB4F00C3C868 /* Flag.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flag.xcassets; sourceTree = "<group>"; };
 		4794399B2065CE1400C3C868 /* LanguageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageCell.xib; sourceTree = "<group>"; };
 		4794399D2065CF1000C3C868 /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
+		479439A4206AA99400C3C868 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		479983F3206AAB5D00BC3227 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		479983F6206AACAC00BC3227 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		47FCBEC9205EFC2D0014F2A4 /* henrard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = henrard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FCBECC205EFC2D0014F2A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FCBECE205EFC2D0014F2A4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +193,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		471E4D872072918C00E0C70E /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				471E4D8A2072931600E0C70E /* SkillPopUpViewController.swift */,
+				471E4D8C207294D800E0C70E /* PopUp.storyboard */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
 		4794396E2061AE0200C3C868 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +282,56 @@
 			path = LanguageCell;
 			sourceTree = "<group>";
 		};
+		479439A0206AA63500C3C868 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				479439A3206AA98800C3C868 /* Welcome */,
+				479439A2206AA66C00C3C868 /* Main */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		479439A2206AA66C00C3C868 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				47FCBECE205EFC2D0014F2A4 /* MainViewController.swift */,
+				47FCBF4020606F6E0014F2A4 /* MainViewController+tableView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		479439A3206AA98800C3C868 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				479439A4206AA99400C3C868 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		479983F1206AAB4A00BC3227 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				479983F2206AAB5300BC3227 /* Button */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		479983F2206AAB5300BC3227 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				479983F3206AAB5D00BC3227 /* LoadingButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		479983F5206AAC8800BC3227 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				479983F6206AACAC00BC3227 /* Segue.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		47FCBEC0205EFC2D0014F2A4 = {
 			isa = PBXGroup;
 			children = (
@@ -326,13 +399,13 @@
 		47FCBEFB205EFD390014F2A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				471E4D872072918C00E0C70E /* PopUp */,
+				479983F1206AAB4A00BC3227 /* Custom */,
+				479439A0206AA63500C3C868 /* Controller */,
 				479439722061AEE400C3C868 /* Cell */,
 				47FCBF42206070200014F2A4 /* Section */,
 				47FCBF2F206054BD0014F2A4 /* Header */,
 				47FCBED0205EFC2D0014F2A4 /* Main.storyboard */,
-				47FCBECE205EFC2D0014F2A4 /* MainViewController.swift */,
-				47FCBF4020606F6E0014F2A4 /* MainViewController+tableView.swift */,
-				479439922065B7F000C3C868 /* MXScrollContainerController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,9 +423,11 @@
 		47FCBEFD205EFD440014F2A4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				479983F5206AAC8800BC3227 /* Constant */,
 				47FCBF37206057070014F2A4 /* Extension */,
 				47FCBF04205EFDF30014F2A4 /* PlistReader.swift */,
 				47FCBF06205EFE1F0014F2A4 /* WebService.swift */,
+				471E4D8120717CAE00E0C70E /* PopUpController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -433,6 +508,8 @@
 			children = (
 				47FCBF30206054D10014F2A4 /* MainHeaderView.swift */,
 				47FCBF32206054DB0014F2A4 /* MainHeaderView.xib */,
+				471E4D8320717E8A00E0C70E /* SectionHeaderView.swift */,
+				471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -613,6 +690,7 @@
 				47FCBF1C205F16630014F2A4 /* properties.plist in Resources */,
 				479439822062F98600C3C868 /* SkillCollectionCell.xib in Resources */,
 				4794398C2064504E00C3C868 /* Technology.xcassets in Resources */,
+				471E4D8D207294D800E0C70E /* PopUp.storyboard in Resources */,
 				4794399C2065CE1400C3C868 /* LanguageCell.xib in Resources */,
 				47FCBED7205EFC2D0014F2A4 /* LaunchScreen.storyboard in Resources */,
 				4794397E2062F93900C3C868 /* SkillCell.xib in Resources */,
@@ -621,6 +699,7 @@
 				479439742061AEF800C3C868 /* GeneralCell.xib in Resources */,
 				47FCBED2205EFC2D0014F2A4 /* Main.storyboard in Resources */,
 				479439992065CB4F00C3C868 /* Flag.xcassets in Resources */,
+				471E4D8620717E9F00E0C70E /* SectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,15 +811,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-henrard/Pods-henrard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMPopTip/AMPopTip.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework",
-				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMPopTip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXParallaxHeader.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -801,10 +880,14 @@
 			files = (
 				47FCBF49206071DA0014F2A4 /* SkillViewModel.swift in Sources */,
 				4794398F20645E6300C3C868 /* LanguageSection.swift in Sources */,
+				479983F4206AAB5D00BC3227 /* LoadingButton.swift in Sources */,
 				47943989206303AC00C3C868 /* SkillSection.swift in Sources */,
+				479983F7206AACAC00BC3227 /* Segue.swift in Sources */,
 				479439952065C90300C3C868 /* ImageExtension.swift in Sources */,
 				47FCBF0E205EFFAB0014F2A4 /* Skill.swift in Sources */,
+				471E4D8420717E8A00E0C70E /* SectionHeaderView.swift in Sources */,
 				47FCBF3B206058EF0014F2A4 /* ViewExtension.swift in Sources */,
+				471E4D8220717CAE00E0C70E /* PopUpController.swift in Sources */,
 				47FCBF05205EFDF30014F2A4 /* PlistReader.swift in Sources */,
 				4794396D2061AD6200C3C868 /* GeneralSection.swift in Sources */,
 				47FCBF0C205EFEAF0014F2A4 /* Technology.swift in Sources */,
@@ -812,6 +895,7 @@
 				479439792061B1B500C3C868 /* GeneralSectionRow.swift in Sources */,
 				47FCBF17205F0C7E0014F2A4 /* Skill+CodingKey.swift in Sources */,
 				47FCBF09205EFE2F0014F2A4 /* Developer.swift in Sources */,
+				479439A5206AA99400C3C868 /* WelcomeViewController.swift in Sources */,
 				47FCBF4120606F6F0014F2A4 /* MainViewController+tableView.swift in Sources */,
 				479439862063033600C3C868 /* SkillCollectionCell.swift in Sources */,
 				47FCBF31206054D10014F2A4 /* MainHeaderView.swift in Sources */,
@@ -821,6 +905,7 @@
 				47FCBECF205EFC2D0014F2A4 /* MainViewController.swift in Sources */,
 				47FCBF07205EFE1F0014F2A4 /* WebService.swift in Sources */,
 				47FCBF10205EFFEB0014F2A4 /* Level.swift in Sources */,
+				471E4D8B2072931600E0C70E /* SkillPopUpViewController.swift in Sources */,
 				479439972065CACA00C3C868 /* LanguageViewModel.swift in Sources */,
 				479439712061AE2800C3C868 /* SectionProtocol.swift in Sources */,
 				479439842062F9DD00C3C868 /* SkillCell.swift in Sources */,
@@ -833,7 +918,6 @@
 				47FCBF452060702F0014F2A4 /* SectionType.swift in Sources */,
 				47FCBF2D2060316F0014F2A4 /* Language+CodingKey.swift in Sources */,
 				47FCBF47206070570014F2A4 /* Section.swift in Sources */,
-				479439932065B7F000C3C868 /* MXScrollContainerController.swift in Sources */,
 				47FCBF3F20605D050014F2A4 /* DeveloperViewModel.swift in Sources */,
 				47FCBF3D20605C250014F2A4 /* ColorExtension.swift in Sources */,
 			);

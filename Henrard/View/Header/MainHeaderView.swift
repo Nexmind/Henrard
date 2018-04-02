@@ -16,6 +16,7 @@ class MainHeaderView: UIView {
     @IBOutlet weak var imageProfile: UIImageView!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelSpeciality: UILabel!
+    @IBOutlet weak var opaqueView: UIView!
     
     // MARK: Variables
     var view: UIView!
@@ -47,10 +48,11 @@ class MainHeaderView: UIView {
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
+        self.opaqueView.backgroundColor = UIColor.midnightBlue
+        self.opaqueView.alpha = 0.5
         self.imageProfile.clipsToBounds = true
         self.imageProfile.image = #imageLiteral(resourceName: "phProfilPicture")
         self.imageProfile.border(color: UIColor.gray, thickness: 1, round: true)
-        
         addSubview(view)
     }
     

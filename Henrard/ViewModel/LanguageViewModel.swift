@@ -28,6 +28,10 @@ class LanguageViewModel {
         case .none: return ""
         }
     }
+    
+    var comment: String {
+        return self.language.comment
+    }
 
     var flag: UIImage? {
         switch(self.language.code) {

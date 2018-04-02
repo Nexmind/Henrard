@@ -20,6 +20,7 @@ class GeneralCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = UIColor.cloud
         labelTitle.textColor = UIColor.midnightBlue
         labelValue.textColor = UIColor.blackGrey
     }
