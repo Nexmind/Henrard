@@ -26,7 +26,7 @@ class LanguageCell: UITableViewCell {
         self.languageViewModel = languageViewModel
         self.selectionStyle = .none
         self.labelLevel.text = languageViewModel.textLevel
-        self.labelLevel.textColor = UIColor.wetAsphalt
+        self.labelLevel.textColor = UIColor.blackGrey
         self.imageFlag.image = languageViewModel.flag
     }
 }

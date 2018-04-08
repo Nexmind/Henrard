@@ -32,6 +32,10 @@ class LanguageViewModel {
     var comment: String {
         return self.language.comment
     }
+    
+    var name: String {
+        return self.language.code.rawValue
+    }
 
     var flag: UIImage? {
         switch(self.language.code) {

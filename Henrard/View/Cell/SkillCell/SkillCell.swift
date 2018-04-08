@@ -55,6 +55,8 @@ class SkillCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewData
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let skill = self.skillsViewModel[indexPath.row]
+        let vc = DetailsPopUpViewController.instance()
+        vc.set(with: skill)
         if let parent = self.parentViewController {
             PopupController
                 .create(parent)
@@ -72,7 +74,7 @@ class SkillCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewData
                 .didCloseHandler { _ in
 
                 }
-                .show(SkillPopUpViewController.instance(skillViewModel: skill))
+                .show(vc)
         }
     }
 

@@ -6,7 +6,6 @@ target 'henrard' do
   use_frameworks!
   pod "MXParallaxHeader"
   pod "Kingfisher"
-  pod "AMPopTip"
   
   target 'henrardTests' do
     inherit! :search_paths

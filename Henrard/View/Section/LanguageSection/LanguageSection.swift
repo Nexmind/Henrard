@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AMPopTip
 
 class LanguageSection: Section, SectionProtocol {
 
@@ -35,13 +34,26 @@ class LanguageSection: Section, SectionProtocol {
     override func didSelect(indexPath: IndexPath, in tableView: UITableView) {
         let cell = tableView.cellForRow(at: indexPath)
         let language = developerViewModel.languages[indexPath.row]
-
-        if !language.comment.isEmpty, let parent = self.parentViewController, let frame = cell?.frame {
-            let popTip = PopTip()
-            popTip.bubbleColor = UIColor.wetAsphalt
-            popTip.textColor = UIColor.cloud
-            let newFrame = CGRect(x: frame.minX, y: frame.minY + self.heightForSection(), width: frame.width, height: frame.height)
-            popTip.show(text: language.comment, direction: .up, maxWidth: CGFloat(200), in: parent.view, from: newFrame)
+        let vc = DetailsPopUpViewController.instance()
+        vc.set(with: language)
+        if let parent = self.parentViewController {
+            PopupController
+                .create(parent)
+                .customize(
+                    [
+                        .animation(.slideUp),
+                        .scrollable(true),
+                        .backgroundStyle(.blackFilter(alpha: 0.7)),
+                        .layout(.bottom)
+                    ]
+                )
+                .didShowHandler { popup in
+                    
+                }
+                .didCloseHandler { _ in
+                    
+                }
+                .show(vc)
         }
     }
 }

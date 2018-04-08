@@ -12,7 +12,7 @@
 		471E4D8220717CAE00E0C70E /* PopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8120717CAE00E0C70E /* PopUpController.swift */; };
 		471E4D8420717E8A00E0C70E /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8320717E8A00E0C70E /* SectionHeaderView.swift */; };
 		471E4D8620717E9F00E0C70E /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */; };
-		471E4D8B2072931600E0C70E /* SkillPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8A2072931600E0C70E /* SkillPopUpViewController.swift */; };
+		471E4D8B2072931600E0C70E /* DetailsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8A2072931600E0C70E /* DetailsPopUpViewController.swift */; };
 		471E4D8D207294D800E0C70E /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471E4D8C207294D800E0C70E /* PopUp.storyboard */; };
 		4794396D2061AD6200C3C868 /* GeneralSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4794396C2061AD6200C3C868 /* GeneralSection.swift */; };
 		479439712061AE2800C3C868 /* SectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479439702061AE2800C3C868 /* SectionProtocol.swift */; };
@@ -93,7 +93,7 @@
 		471E4D8120717CAE00E0C70E /* PopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpController.swift; sourceTree = "<group>"; };
 		471E4D8320717E8A00E0C70E /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
-		471E4D8A2072931600E0C70E /* SkillPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillPopUpViewController.swift; sourceTree = "<group>"; };
+		471E4D8A2072931600E0C70E /* DetailsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPopUpViewController.swift; sourceTree = "<group>"; };
 		471E4D8C207294D800E0C70E /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
 		474280778730FB98445EE8F6 /* Pods_henrardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_henrardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4794396C2061AD6200C3C868 /* GeneralSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSection.swift; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 		471E4D872072918C00E0C70E /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
-				471E4D8A2072931600E0C70E /* SkillPopUpViewController.swift */,
+				471E4D8A2072931600E0C70E /* DetailsPopUpViewController.swift */,
 				471E4D8C207294D800E0C70E /* PopUp.storyboard */,
 			);
 			path = PopUp;
@@ -811,13 +811,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-henrard/Pods-henrard-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AMPopTip/AMPopTip.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMPopTip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXParallaxHeader.framework",
 			);
@@ -905,7 +903,7 @@
 				47FCBECF205EFC2D0014F2A4 /* MainViewController.swift in Sources */,
 				47FCBF07205EFE1F0014F2A4 /* WebService.swift in Sources */,
 				47FCBF10205EFFEB0014F2A4 /* Level.swift in Sources */,
-				471E4D8B2072931600E0C70E /* SkillPopUpViewController.swift in Sources */,
+				471E4D8B2072931600E0C70E /* DetailsPopUpViewController.swift in Sources */,
 				479439972065CACA00C3C868 /* LanguageViewModel.swift in Sources */,
 				479439712061AE2800C3C868 /* SectionProtocol.swift in Sources */,
 				479439842062F9DD00C3C868 /* SkillCell.swift in Sources */,
