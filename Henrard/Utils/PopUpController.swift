@@ -258,7 +258,7 @@ private extension PopupController {
         popupView.frame.origin.x = layout.origin(popupView).x
         baseScrollView.frame = view.frame
         var toAdd: CGFloat = 0
-        if #available(iOS 11, *), self.parent?.navigationController?.navigationBar == nil {
+        if #available(iOS 11, *), self.parent?.navigationController?.navigationBar == nil, Display.typeIsLike != .iphoneX {
             toAdd = 44
         }
         baseScrollView.contentInset.top = layout.origin(popupView).y + toAdd

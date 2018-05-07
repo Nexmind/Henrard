@@ -14,4 +14,15 @@ class Properties {
         let url = plistReader.getField(key: "wsUrl")
         return url!
     }
+    
+    static let apiUsername = { () -> String in
+        let plistReader = PlistReader(plistFileName: "properties")
+        let url = plistReader.getField(key: "apiUsername")
+        return url!
+    }
+    static let apiPassword = { () -> String in
+        let plistReader = PlistReader(plistFileName: "properties")
+        let url = plistReader.getField(key: "apiPassword")
+        return url!
+    }
 }

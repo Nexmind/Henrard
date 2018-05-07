@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum SectionType {
+@objc enum SectionType: Int {
     case general
     case skills
     case languages

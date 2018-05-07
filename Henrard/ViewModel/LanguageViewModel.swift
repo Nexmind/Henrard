@@ -21,10 +21,10 @@ class LanguageViewModel {
 
     var textLevel: String {
         switch(self.language.level) {
-        case .basic: return "I can order my drink"
+        case .basic: return "Very basic level"
         case .medium: return "I can read/write & speak on a topic i master"
-        case .senior: return "I'm like a native speaker !"
-        case .masterRace: return "It's my mother language"
+        case .senior: return "I'm like a native speaker"
+        case .masterRace: return "It's my native language"
         case .none: return ""
         }
     }

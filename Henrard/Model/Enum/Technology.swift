@@ -15,6 +15,7 @@ enum Technology: String {
     case jhipster = "JHIPSTER"
     case angular = "ANGULAR"
     case git = "GIT"
+    case aws = "AWS"
     case none = "NONE"
 
     static func build(value: String) -> Technology {
@@ -24,6 +25,7 @@ enum Technology: String {
             case "NODEJS": return .nodeJS
             case "JHIPSTER": return .jhipster
             case "ANGULAR": return .angular
+            case "AWS": return .aws
             case "GIT": return .git
             default: print("TECHNOLOGY ENUM: unknown value"); return .none
         }

@@ -14,6 +14,13 @@
 		471E4D8620717E9F00E0C70E /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */; };
 		471E4D8B2072931600E0C70E /* DetailsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8A2072931600E0C70E /* DetailsPopUpViewController.swift */; };
 		471E4D8D207294D800E0C70E /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471E4D8C207294D800E0C70E /* PopUp.storyboard */; };
+		474C5BDF209E2F9E0015577D /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C5BDE209E2F9E0015577D /* DeviceUtils.swift */; };
+		474C5BE1209E6AC30015577D /* MainFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474C5BE0209E6AC30015577D /* MainFooterView.xib */; };
+		474C5BE4209E6AE40015577D /* MainFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C5BE3209E6AE40015577D /* MainFooterView.swift */; };
+		4782CBD3209E1A110039202B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4782CBD2209E1A110039202B /* Session.swift */; };
+		4782CBD9209E1BB40039202B /* SessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4782CBD8209E1BB40039202B /* SessionState.swift */; };
+		4782CBDB209E1C6A0039202B /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4782CBDA209E1C6A0039202B /* Authentication.swift */; };
+		4782CBDD209E1D3F0039202B /* Authentication+CodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4782CBDC209E1D3F0039202B /* Authentication+CodingKey.swift */; };
 		4794396D2061AD6200C3C868 /* GeneralSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4794396C2061AD6200C3C868 /* GeneralSection.swift */; };
 		479439712061AE2800C3C868 /* SectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479439702061AE2800C3C868 /* SectionProtocol.swift */; };
 		479439742061AEF800C3C868 /* GeneralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479439732061AEF800C3C868 /* GeneralCell.xib */; };
@@ -66,7 +73,6 @@
 		47FCBF3F20605D050014F2A4 /* DeveloperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCBF3E20605D050014F2A4 /* DeveloperViewModel.swift */; };
 		47FCBF4120606F6F0014F2A4 /* MainViewController+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCBF4020606F6E0014F2A4 /* MainViewController+tableView.swift */; };
 		47FCBF452060702F0014F2A4 /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCBF442060702F0014F2A4 /* SectionType.swift */; };
-		47FCBF47206070570014F2A4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCBF46206070570014F2A4 /* Section.swift */; };
 		47FCBF49206071DA0014F2A4 /* SkillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCBF48206071DA0014F2A4 /* SkillViewModel.swift */; };
 		EBC2909DDCB4DB628E05EB54 /* Pods_henrard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EF94DCCEC93268A07D65DD /* Pods_henrard.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +102,13 @@
 		471E4D8A2072931600E0C70E /* DetailsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPopUpViewController.swift; sourceTree = "<group>"; };
 		471E4D8C207294D800E0C70E /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
 		474280778730FB98445EE8F6 /* Pods_henrardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_henrardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		474C5BDE209E2F9E0015577D /* DeviceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
+		474C5BE0209E6AC30015577D /* MainFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainFooterView.xib; sourceTree = "<group>"; };
+		474C5BE3209E6AE40015577D /* MainFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFooterView.swift; sourceTree = "<group>"; };
+		4782CBD2209E1A110039202B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		4782CBD8209E1BB40039202B /* SessionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionState.swift; sourceTree = "<group>"; };
+		4782CBDA209E1C6A0039202B /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		4782CBDC209E1D3F0039202B /* Authentication+CodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authentication+CodingKey.swift"; sourceTree = "<group>"; };
 		4794396C2061AD6200C3C868 /* GeneralSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSection.swift; sourceTree = "<group>"; };
 		479439702061AE2800C3C868 /* SectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionProtocol.swift; sourceTree = "<group>"; };
 		479439732061AEF800C3C868 /* GeneralCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralCell.xib; sourceTree = "<group>"; };
@@ -154,7 +167,6 @@
 		47FCBF3E20605D050014F2A4 /* DeveloperViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewModel.swift; sourceTree = "<group>"; };
 		47FCBF4020606F6E0014F2A4 /* MainViewController+tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+tableView.swift"; sourceTree = "<group>"; };
 		47FCBF442060702F0014F2A4 /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
-		47FCBF46206070570014F2A4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		47FCBF48206071DA0014F2A4 /* SkillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewModel.swift; sourceTree = "<group>"; };
 		56723183F290B764AA6417E6 /* Pods-henrardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-henrardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-henrardUITests/Pods-henrardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BBF139E395DE57BE8CD4895 /* Pods-henrardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-henrardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-henrardUITests/Pods-henrardUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +212,15 @@
 				471E4D8C207294D800E0C70E /* PopUp.storyboard */,
 			);
 			path = PopUp;
+			sourceTree = "<group>";
+		};
+		474C5BE2209E6ACA0015577D /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				474C5BE3209E6AE40015577D /* MainFooterView.swift */,
+				474C5BE0209E6AC30015577D /* MainFooterView.xib */,
+			);
+			path = Footer;
 			sourceTree = "<group>";
 		};
 		4794396E2061AE0200C3C868 /* Protocol */ = {
@@ -405,6 +426,7 @@
 				479439722061AEE400C3C868 /* Cell */,
 				47FCBF42206070200014F2A4 /* Section */,
 				47FCBF2F206054BD0014F2A4 /* Header */,
+				474C5BE2209E6ACA0015577D /* Footer */,
 				47FCBED0205EFC2D0014F2A4 /* Main.storyboard */,
 			);
 			path = View;
@@ -428,6 +450,7 @@
 				47FCBF04205EFDF30014F2A4 /* PlistReader.swift */,
 				47FCBF06205EFE1F0014F2A4 /* WebService.swift */,
 				471E4D8120717CAE00E0C70E /* PopUpController.swift */,
+				474C5BDE209E2F9E0015577D /* DeviceUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -437,6 +460,7 @@
 			children = (
 				47FCBF03205EFDB50014F2A4 /* Configuration */,
 				47FCBECC205EFC2D0014F2A4 /* AppDelegate.swift */,
+				4782CBD2209E1A110039202B /* Session.swift */,
 				47FCBED8205EFC2E0014F2A4 /* Info.plist */,
 				47FCBF01205EFDAC0014F2A4 /* Podfile */,
 				47FCBED5205EFC2D0014F2A4 /* LaunchScreen.storyboard */,
@@ -467,6 +491,7 @@
 		47FCBF0A205EFE9C0014F2A4 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				4782CBD8209E1BB40039202B /* SessionState.swift */,
 				47FCBF0B205EFEAF0014F2A4 /* Technology.swift */,
 				47FCBF0F205EFFEB0014F2A4 /* Level.swift */,
 				47FCBF2A206030BD0014F2A4 /* LanguageCode.swift */,
@@ -477,6 +502,7 @@
 		47FCBF13205F0A5A0014F2A4 /* CodingKeys */ = {
 			isa = PBXGroup;
 			children = (
+				4782CBDC209E1D3F0039202B /* Authentication+CodingKey.swift */,
 				47FCBF14205F0A6F0014F2A4 /* Developer+CodingKey.swift */,
 				47FCBF16205F0C7E0014F2A4 /* Skill+CodingKey.swift */,
 				47FCBF2C2060316F0014F2A4 /* Language+CodingKey.swift */,
@@ -496,6 +522,7 @@
 		47FCBF2E206037EC0014F2A4 /* Struct */ = {
 			isa = PBXGroup;
 			children = (
+				4782CBDA209E1C6A0039202B /* Authentication.swift */,
 				47FCBF08205EFE2F0014F2A4 /* Developer.swift */,
 				47FCBF0D205EFFAB0014F2A4 /* Skill.swift */,
 				47FCBF28206030900014F2A4 /* Language.swift */,
@@ -533,7 +560,6 @@
 				4794397A2061BA1F00C3C868 /* GeneralSection */,
 				479439872063038600C3C868 /* SkillSection */,
 				4794398D20645E3C00C3C868 /* LanguageSection */,
-				47FCBF46206070570014F2A4 /* Section.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -687,6 +713,7 @@
 			files = (
 				47FCBF33206054DB0014F2A4 /* MainHeaderView.xib in Resources */,
 				47FCBF35206055B30014F2A4 /* Banner.xcassets in Resources */,
+				474C5BE1209E6AC30015577D /* MainFooterView.xib in Resources */,
 				47FCBF1C205F16630014F2A4 /* properties.plist in Resources */,
 				479439822062F98600C3C868 /* SkillCollectionCell.xib in Resources */,
 				4794398C2064504E00C3C868 /* Technology.xcassets in Resources */,
@@ -887,6 +914,7 @@
 				47FCBF3B206058EF0014F2A4 /* ViewExtension.swift in Sources */,
 				471E4D8220717CAE00E0C70E /* PopUpController.swift in Sources */,
 				47FCBF05205EFDF30014F2A4 /* PlistReader.swift in Sources */,
+				4782CBDD209E1D3F0039202B /* Authentication+CodingKey.swift in Sources */,
 				4794396D2061AD6200C3C868 /* GeneralSection.swift in Sources */,
 				47FCBF0C205EFEAF0014F2A4 /* Technology.swift in Sources */,
 				47FCBF29206030900014F2A4 /* Language.swift in Sources */,
@@ -894,8 +922,10 @@
 				47FCBF17205F0C7E0014F2A4 /* Skill+CodingKey.swift in Sources */,
 				47FCBF09205EFE2F0014F2A4 /* Developer.swift in Sources */,
 				479439A5206AA99400C3C868 /* WelcomeViewController.swift in Sources */,
+				474C5BE4209E6AE40015577D /* MainFooterView.swift in Sources */,
 				47FCBF4120606F6F0014F2A4 /* MainViewController+tableView.swift in Sources */,
 				479439862063033600C3C868 /* SkillCollectionCell.swift in Sources */,
+				4782CBD9209E1BB40039202B /* SessionState.swift in Sources */,
 				47FCBF31206054D10014F2A4 /* MainHeaderView.swift in Sources */,
 				47FCBF2B206030BD0014F2A4 /* LanguageCode.swift in Sources */,
 				47FCBF25205F17B20014F2A4 /* DeveloperService.swift in Sources */,
@@ -905,8 +935,11 @@
 				47FCBF10205EFFEB0014F2A4 /* Level.swift in Sources */,
 				471E4D8B2072931600E0C70E /* DetailsPopUpViewController.swift in Sources */,
 				479439972065CACA00C3C868 /* LanguageViewModel.swift in Sources */,
+				4782CBDB209E1C6A0039202B /* Authentication.swift in Sources */,
 				479439712061AE2800C3C868 /* SectionProtocol.swift in Sources */,
 				479439842062F9DD00C3C868 /* SkillCell.swift in Sources */,
+				4782CBD3209E1A110039202B /* Session.swift in Sources */,
+				474C5BDF209E2F9E0015577D /* DeviceUtils.swift in Sources */,
 				47FCBF1E205F16910014F2A4 /* Properties.swift in Sources */,
 				4794399F2065CF5400C3C868 /* LanguageCell.swift in Sources */,
 				47FCBF39206057160014F2A4 /* ClassExtension.swift in Sources */,
@@ -915,7 +948,6 @@
 				479439772061AF0B00C3C868 /* GeneralCell.swift in Sources */,
 				47FCBF452060702F0014F2A4 /* SectionType.swift in Sources */,
 				47FCBF2D2060316F0014F2A4 /* Language+CodingKey.swift in Sources */,
-				47FCBF47206070570014F2A4 /* Section.swift in Sources */,
 				47FCBF3F20605D050014F2A4 /* DeveloperViewModel.swift in Sources */,
 				47FCBF3D20605C250014F2A4 /* ColorExtension.swift in Sources */,
 			);

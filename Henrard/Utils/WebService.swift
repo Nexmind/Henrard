@@ -50,14 +50,14 @@ public class WebService {
     }
     
     
-    public func post(_ url: String, headers: [String: String]?, body: String, timeOut: TimeInterval?, withBehavior responseHandler: @escaping (Data?, Int) -> Void){
+    public func post(_ url: String, headers: [String: String]?, body: Data?, timeOut: TimeInterval?, withBehavior responseHandler: @escaping (Data?, Int) -> Void){
         let wsUrl: String = "\(self.endPointUrl)\(url)"
         guard let NSUrl = URL(string: wsUrl) else {
             NSLog("---< !!! ERROR !!! >--- WebService (POST) \'\(url)\': cannot create URL")
             return
         }
         let urlRequest = NSMutableURLRequest(url: NSUrl)
-        urlRequest.httpBody = body.data(using: String.Encoding.isoLatin1, allowLossyConversion: true)
+        urlRequest.httpBody = body
         urlRequest.httpMethod = "POST"
         urlRequest.timeoutInterval = timeOut == nil ? 5 : timeOut!
         if headers != nil {
@@ -85,14 +85,14 @@ public class WebService {
     }
     
     
-    public func put(_ url: String, headers: [String: String]?, body: String, withBehavior responseHandler: @escaping (Data?, Int) -> Void){
+    public func put(_ url: String, headers: [String: String]?, body: Data?, withBehavior responseHandler: @escaping (Data?, Int) -> Void){
         let wsUrl: String = "\(self.endPointUrl)\(url)"
         guard let NSUrl = URL(string: wsUrl) else {
             NSLog("---< !!! ERROR !!! >--- WebService (PUT) \'\(url)\': cannot create URL")
             return
         }
         let urlRequest = NSMutableURLRequest(url: NSUrl)
-        urlRequest.httpBody = body.data(using: String.Encoding.utf8, allowLossyConversion: true)
+        urlRequest.httpBody = body
         urlRequest.httpMethod = "PUT"
         urlRequest.timeoutInterval = 10
         if headers != nil {
@@ -118,7 +118,7 @@ public class WebService {
         task.resume()
     }
     
-    public func delete(_ url: String, headers: [String: String]?, body: String, timeOut: TimeInterval?, withBehavior responseHandler: @escaping (Data?, Int) -> Void){
+    public func delete(_ url: String, headers: [String: String]?, body: Data?, timeOut: TimeInterval?, withBehavior responseHandler: @escaping (Data?, Int) -> Void){
         let wsUrl: String = "\(self.endPointUrl)\(url)"
         guard let NSUrl = URL(string: wsUrl) else {
             NSLog("---< !!! ERROR !!! >--- WebService (DELETE) \'\(url)\': cannot create URL")
@@ -126,7 +126,7 @@ public class WebService {
         }
         let urlRequest = NSMutableURLRequest(url: NSUrl)
         urlRequest.httpMethod = "DELETE"
-        urlRequest.httpBody = body.data(using: String.Encoding.utf8, allowLossyConversion: true)
+        urlRequest.httpBody = body
         urlRequest.timeoutInterval = timeOut == nil ? 5 : timeOut!
         if headers != nil {
             for param in headers! {

@@ -19,14 +19,15 @@ class MainViewController: UIViewController, MXParallaxHeaderDelegate {
     var developerViewModel = DeveloperViewModel()
     var headerView = MainHeaderView()
 
-    var sections: [Section] = [Section]()
+    var sections: [SectionProtocol] = [SectionProtocol]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView = UITableView()
+        self.tableView = UITableView.init(frame: .zero, style: .plain)
         self.tableView.delegate = self
         self.tableView.dataSource = self
-
+        self.tableView.backgroundColor = UIColor.cloud
+        self.tableView.tableFooterView = UIView()
         self.registerCells()
 
         self.scrollView = MXScrollView()

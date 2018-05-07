@@ -9,7 +9,7 @@
 import UIKit
 import MXParallaxHeader
 
-class SkillSection: Section, SectionProtocol {
+class SkillSection: SectionProtocol {
 
     var developerViewModel: DeveloperViewModel
     var parentScrollView: MXScrollView? = nil
@@ -17,19 +17,32 @@ class SkillSection: Section, SectionProtocol {
     
     init(developerViewModel: DeveloperViewModel) {
         self.developerViewModel = developerViewModel
-        super.init(type: .general)
-        self.title = "Skills"
     }
 
     // MARK: SectionProtocol
-    override func numberOfRows() -> Int {
+    func numberOfRows() -> Int {
         return 1
     }
-    override func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
+    
+    func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SkillCell.describe) as! SkillCell
         cell.skillsViewModel = self.developerViewModel.skills
         cell.parentScrollView = self.parentScrollView
         cell.parentViewController = self.parentViewController
         return cell
+    }
+    
+    func titleForSection() -> String? {
+        return "Skills"
+    }
+    
+    func viewForSection() -> UIView? {
+        let header = SectionHeaderView()
+        header.set(with: self)
+        return header
+    }
+    
+    func heightForSection() -> CGFloat {
+        return 50
     }
 }

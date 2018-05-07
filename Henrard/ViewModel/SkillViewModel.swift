@@ -33,6 +33,8 @@ class SkillViewModel {
             return #imageLiteral(resourceName: "logo_jhipster")
         case .git:
             return #imageLiteral(resourceName: "logo_git")
+        case .aws:
+            return #imageLiteral(resourceName: "logo_aws")
         case .none:
             return nil
         }

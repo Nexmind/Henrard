@@ -8,31 +8,28 @@
 
 import UIKit
 
-class LanguageSection: Section, SectionProtocol {
+class LanguageSection: SectionProtocol {
 
     var developerViewModel: DeveloperViewModel
     var parentViewController: UIViewController? = nil
     
     init(developerViewModel: DeveloperViewModel) {
         self.developerViewModel = developerViewModel
-        super.init(type: .languages)
-        self.title = "Languages"
     }
 
     // MARK: SectionProtocol
-    override func numberOfRows() -> Int {
+    func numberOfRows() -> Int {
         return developerViewModel.languages.count
     }
 
     // MARK: Section Override
-    override func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
+    func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LanguageCell.describe) as! LanguageCell
         cell.set(with: developerViewModel.languages[row])
         return cell
     }
 
-    override func didSelect(indexPath: IndexPath, in tableView: UITableView) {
-        let cell = tableView.cellForRow(at: indexPath)
+    func didSelect(indexPath: IndexPath, in tableView: UITableView) {
         let language = developerViewModel.languages[indexPath.row]
         let vc = DetailsPopUpViewController.instance()
         vc.set(with: language)
@@ -55,5 +52,19 @@ class LanguageSection: Section, SectionProtocol {
                 }
                 .show(vc)
         }
+    }
+    
+    func titleForSection() -> String? {
+        return "Languages"
+    }
+    
+    func viewForSection() -> UIView? {
+        let header = SectionHeaderView()
+        header.set(with: self)
+        return header
+    }
+    
+    func heightForSection() -> CGFloat {
+        return 50
     }
 }

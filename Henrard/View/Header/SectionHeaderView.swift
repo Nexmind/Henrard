@@ -54,9 +54,9 @@ class SectionHeaderView: UIView {
         return view
     }
     
-    func set(with section: Section) {
-        self.labelSectionName.text = section.title
-        self.imageSection.image = section.image
+    func set(with section: SectionProtocol, image: UIImage? = nil) {
+        self.labelSectionName.text = section.titleForSection?() ?? nil
+        self.imageSection.image = image
         
         if section.image == nil {
             self.cstImageWidth.constant = 0

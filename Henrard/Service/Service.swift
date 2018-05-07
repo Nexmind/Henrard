@@ -9,14 +9,35 @@
 import Foundation
 
 class Service {
-    
-    var ws : WebService
+
+    var ws: WebService
     var headers = [
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMzk4Nzg1MH0.kkIqul1sLw90WSFB7G5Heg4Vw3E-XVQ8PNHCrkaDIwQ4XNjjS76eJFpNaORp0r-O04Ymn1hOm_zERsNOtQHzog"
+        "Authorization": Session.shared.authentication.completeToken
     ]
-    
+
     init() {
         self.ws = WebService(url: Properties.endpointUrl())
+    }
+
+    func authenticate(authentication: Authentication, completion: @escaping (Int, Bool) -> Void) {
+        if let authData = (try? JSONEncoder().encode(authentication)) {
+            self.ws.post("/authenticate", headers: self.headers, body: authData, timeOut: nil) { data, code in
+                if let _ = data, code == 200 {
+                    let newAuthentication = (try? JSONDecoder().decode(Authentication.self, from: data!))
+                    if let newAuth = newAuthentication {
+                        Session.shared.authentication.setToken(value: newAuth.token, type: "Bearer")
+                        Session.shared.state = .active
+                        completion(code, true)
+                    } else {
+                        completion(code, false)
+                    }
+                } else {
+                    completion(code, false)
+                }
+            }
+        } else {
+            completion(0, false)
+        }
     }
 }

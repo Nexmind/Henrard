@@ -27,20 +27,20 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return UITableViewAutomaticDimension
     }
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section].title
+        return sections[section].titleForSection?() ?? nil
     }
-    
+
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return sections[section].heightForSection()
+        return sections[section].heightForSection?() ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return sections[section].viewForSection()
+        return sections[section].viewForSection?() ?? nil
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        sections[indexPath.section].didSelect(indexPath: indexPath, in: tableView)
+        sections[indexPath.section].didSelect?(indexPath: indexPath, in: tableView)
     }
 }
