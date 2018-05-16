@@ -23,13 +23,4 @@ extension SectionProtocol {
     var image: UIImage? {
         return nil
     }
-    
-    func numberOfRows() -> Int {
-        // To be implemented in subclass
-        return 0
-    }
-    
-    func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
-        return UITableViewCell()
-    }
 }

@@ -31,8 +31,8 @@
                                 <color key="textColor" red="0.93844436809999998" green="0.93844436809999998" blue="0.93844436809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I'm Julien Henrard and welcome on my personal app !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3g-XA-PNe">
-                                <rect key="frame" x="46" y="352" width="283" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm Julien Henrard and welcome on my personal app !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3g-XA-PNe">
+                                <rect key="frame" x="46" y="352" width="283" height="41"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.93844436809999998" green="0.93844436809999998" blue="0.93844436809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                                 <rect key="frame" x="82" y="571" width="210" height="45"/>
                                 <color key="backgroundColor" red="0.82745098039215681" green="0.32941176470588235" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="Fxy-Er-6XN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="Fxy-Er-6XN"/>
                                     <constraint firstAttribute="height" constant="45" id="csb-BT-zWs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -52,6 +52,16 @@
                                     <action selector="touchUpButtonContinue:" destination="vAU-pF-WlL" eventType="touchUpInside" id="gZQ-XL-o7n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVR-Ki-c5y">
+                                <rect key="frame" x="154" y="413" width="67" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <state key="normal" title="More infos">
+                                    <color key="titleColor" red="0.82745098039999998" green="0.3294117647" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpMoreInfosButton:" destination="vAU-pF-WlL" eventType="touchUpInside" id="O9H-DX-g8K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,8 +70,10 @@
                             <constraint firstItem="um9-Sj-y40" firstAttribute="centerY" secondItem="cG6-0j-oBk" secondAttribute="centerY" id="AH2-rQ-zTh"/>
                             <constraint firstItem="um9-Sj-y40" firstAttribute="centerX" secondItem="cG6-0j-oBk" secondAttribute="centerX" id="Eod-JG-CgN"/>
                             <constraint firstItem="um9-Sj-y40" firstAttribute="top" secondItem="Wb6-gs-0Iv" secondAttribute="bottom" constant="17" id="HjC-rP-Nff"/>
+                            <constraint firstItem="sVR-Ki-c5y" firstAttribute="centerX" secondItem="Zji-GM-yqK" secondAttribute="centerX" id="SS4-79-KPu"/>
                             <constraint firstItem="R3g-XA-PNe" firstAttribute="top" secondItem="um9-Sj-y40" secondAttribute="bottom" constant="7" id="VQf-Bd-vre"/>
                             <constraint firstItem="Zji-GM-yqK" firstAttribute="bottom" secondItem="5k3-s0-Iwt" secondAttribute="bottom" constant="51" id="aC6-AM-ajc"/>
+                            <constraint firstItem="sVR-Ki-c5y" firstAttribute="top" secondItem="R3g-XA-PNe" secondAttribute="bottom" constant="20" id="fHQ-Q1-JyM"/>
                             <constraint firstItem="Zji-GM-yqK" firstAttribute="trailing" secondItem="R3g-XA-PNe" secondAttribute="trailing" constant="46" id="woO-hG-Gmd"/>
                             <constraint firstItem="Wb6-gs-0Iv" firstAttribute="centerX" secondItem="Zji-GM-yqK" secondAttribute="centerX" id="yNP-Z7-xhB"/>
                         </constraints>
@@ -72,6 +84,7 @@
                         <outlet property="imgWelcome" destination="Wb6-gs-0Iv" id="hfV-IX-jW4"/>
                         <outlet property="lblDescription" destination="R3g-XA-PNe" id="pZC-7W-44E"/>
                         <outlet property="lblHello" destination="um9-Sj-y40" id="UWD-6x-gyf"/>
+                        <outlet property="moreInfosButton" destination="sVR-Ki-c5y" id="8IQ-Ly-gtt"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="WelcomeToMain" id="hEG-A8-Hzz"/>
                     </connections>
                 </viewController>
@@ -86,7 +99,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

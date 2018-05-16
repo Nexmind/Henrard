@@ -14,16 +14,29 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var lblHello: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var buttonContinue: LoadingButton!
+    @IBOutlet weak var moreInfosButton: UIButton!
 
     var developerViewModel: DeveloperViewModel? = nil
 
+    let alreadyOpenedKey = "alreadyOpened"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.buttonContinue.round()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let alreadyOpened = UserDefaults.standard.bool(forKey: alreadyOpenedKey)
+        if !alreadyOpened {
+            UserDefaults.standard.set(true, forKey: alreadyOpenedKey)
+            self.showMoreInfos()
+        }
+    }
+    
     @IBAction func touchUpButtonContinue(_ sender: Any) {
         buttonContinue.showLoading()
-        
+
         let service = Service()
         service.authenticate(authentication: Session.shared.authentication) { code, sessionIsActive in
             if sessionIsActive {
@@ -31,15 +44,40 @@ class WelcomeViewController: UIViewController {
                     DispatchQueue.main.async {
                         if let _ = self.developerViewModel, self.developerViewModel!.isFill {
                             self.performSegue(withIdentifier: Segue.welcomeToMain, sender: nil)
-                        } else {
-                            self.buttonContinue.hideLoading()
                         }
+                        self.buttonContinue.hideLoading()
                     }
                 }
             } else {
                 self.buttonContinue.hideLoading()
             }
         }
+    }
+
+    @IBAction func touchUpMoreInfosButton(_ sender: Any) {
+        self.showMoreInfos()
+    }
+
+    private func showMoreInfos() {
+        let vc = MoreInfosPopUpController.instance()
+        vc.setup()
+        PopupController
+            .create(self)
+            .customize(
+                [
+                        .animation(.slideUp),
+                        .scrollable(true),
+                        .backgroundStyle(.blackFilter(alpha: 0.7)),
+                        .layout(.bottom)
+                ]
+            )
+            .didShowHandler { popup in
+
+            }
+            .didCloseHandler { _ in
+
+            }
+            .show(vc)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

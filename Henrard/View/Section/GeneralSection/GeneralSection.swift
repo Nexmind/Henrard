@@ -34,8 +34,4 @@ class GeneralSection: SectionProtocol {
         tableView.beginUpdates()
         tableView.endUpdates()
     }
-    
-    func heightForSection() -> CGFloat {
-        return 0
-    }
 }

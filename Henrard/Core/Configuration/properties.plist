@@ -7,6 +7,6 @@
 	<key>apiUsername</key>
 	<string>user</string>
 	<key>wsUrl</key>
-	<string>http://henrard.eu-central-1.elasticbeanstalk.com/api</string>
+	<string>http://www.henrard.co/api</string>
 </dict>
 </plist>

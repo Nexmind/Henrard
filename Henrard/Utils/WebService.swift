@@ -34,7 +34,7 @@ public class WebService {
         
         let task = URLSession.shared.dataTask(with: urlRequest as URLRequest) { (data, response, error) in
             guard data != nil else {
-                NSLog("---< ! WARNING ! >--- WebService (GET) \'\(url)\': did not receive data - \(error)")
+                NSLog("---< ! WARNING ! >--- WebService (GET) \'\(url)\': did not receive data - \(String(describing: error))")
                 responseHandler(nil, 0)
                 return
             }

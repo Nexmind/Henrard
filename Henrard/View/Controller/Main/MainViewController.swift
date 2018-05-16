@@ -23,12 +23,16 @@ class MainViewController: UIViewController, MXParallaxHeaderDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.midnightBlue
         self.tableView = UITableView.init(frame: .zero, style: .plain)
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.backgroundColor = UIColor.cloud
+        self.tableView.backgroundColor = UIColor.midnightBlue
         self.tableView.tableFooterView = UIView()
+        self.tableView.estimatedRowHeight = 50
         self.registerCells()
+        
+        self.headerView.parentViewController = self
 
         self.scrollView = MXScrollView()
         self.scrollView.parallaxHeader.view = self.headerView
@@ -36,6 +40,7 @@ class MainViewController: UIViewController, MXParallaxHeaderDelegate {
         self.scrollView.parallaxHeader.mode = .fill
         self.scrollView.parallaxHeader.minimumHeight = self.parallaxMinimumHeight
         self.scrollView.parallaxHeader.delegate = self
+        self.scrollView.backgroundColor = UIColor.midnightBlue
         self.view.addSubview(scrollView)
         self.scrollView.addSubview(self.tableView)
         self.initSections()
@@ -68,12 +73,17 @@ class MainViewController: UIViewController, MXParallaxHeaderDelegate {
         let languageSection = LanguageSection(developerViewModel: self.developerViewModel)
         languageSection.parentViewController = self
         self.sections.append(languageSection)
+        
+        let contactSection = ContactSection()
+        contactSection.parentViewController = self
+        self.sections.append(contactSection)
     }
 
     private func registerCells() {
         self.tableView.register(UINib(nibName: GeneralCell.describe, bundle: nil), forCellReuseIdentifier: GeneralCell.describe)
         self.tableView.register(UINib(nibName: SkillCell.describe, bundle: nil), forCellReuseIdentifier: SkillCell.describe)
         self.tableView.register(UINib(nibName: LanguageCell.describe, bundle: nil), forCellReuseIdentifier: LanguageCell.describe)
+        self.tableView.register(UINib(nibName: ContactCell.describe, bundle: nil), forCellReuseIdentifier: ContactCell.describe)
     }
 
     // MARK: MXParallaxDelegate
@@ -97,6 +107,18 @@ class MainViewController: UIViewController, MXParallaxHeaderDelegate {
             let advanceOfScroll = startToDissapearAt - headerHeight
             self.headerView.imageProfile.alpha = 1 - (advanceAlpha * advanceOfScroll)
             self.headerView.opaqueView.alpha = 0 + (advanceAlpha * advanceOfScroll) > 0.5 ? (advanceAlpha * advanceOfScroll) : 0.5
+            
+            if headerHeight <= endToDissapearAt {
+                UIView.transition(with: self.headerView.backButton, duration: 0.3, options: .curveEaseInOut, animations: {
+                    self.headerView.backButton.backgroundColor = UIColor.clear
+                    self.headerView.backButton.setTitleColor(UIColor.pumpkin, for: .normal)
+                })
+            } else if headerHeight >= endToDissapearAt {
+                UIView.transition(with: self.headerView.backButton, duration: 0.3, options: .curveEaseInOut, animations: {
+                    self.headerView.backButton.backgroundColor = UIColor.pumpkin
+                    self.headerView.backButton.setTitleColor(UIColor.white, for: .normal)
+                })
+            }
         }
     }
 }
