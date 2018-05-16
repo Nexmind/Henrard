@@ -18,11 +18,18 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return sections[indexPath.section].cellFor(row: indexPath.row, in: tableView)
+        let section = sections[indexPath.section]
+        if let title = section.titleForSection?(), section.isFirstRowSection?() ?? false, indexPath.row == 0 {
+            let sectionCell = tableView.dequeueReusableCell(withIdentifier: SectionCell.describe) as! SectionCell
+            sectionCell.set(with: title)
+            return sectionCell
+        }
+        return section.cellFor(row: indexPath.row, in: tableView)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 1 {
+        let section = self.sections[indexPath.section]
+        if section.typeForSection() == .skills && section.isFirstRowSection?() ?? false && indexPath.row > 0  {
             return SkillCollectionCell.itemHeight + 10
         }
         return UITableViewAutomaticDimension

@@ -56,10 +56,8 @@ class MainHeaderView: UIView {
         self.imageProfile.image = #imageLiteral(resourceName: "phProfilPicture")
 
         self.backButton.round()
-        //self.backButton.setTitleColor(UIColor.pumpkin, for: .normal)
         self.backButton.layer.borderColor = UIColor.pumpkin.cgColor
         self.backButton.layer.borderWidth = 1
-//        self.backButton.backgroundColor = UIColor.clear
 
         addSubview(view)
     }

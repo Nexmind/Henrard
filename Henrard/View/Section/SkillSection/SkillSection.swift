@@ -12,7 +12,7 @@ import MXParallaxHeader
 class SkillSection: SectionProtocol {
 
     var developerViewModel: DeveloperViewModel
-    var parentScrollView: MXScrollView? = nil
+    var parentScrollView: UIScrollView? = nil
     var parentViewController: UIViewController? = nil
     
     init(developerViewModel: DeveloperViewModel) {
@@ -21,7 +21,7 @@ class SkillSection: SectionProtocol {
 
     // MARK: SectionProtocol
     func numberOfRows() -> Int {
-        return 1
+        return 1 + (isFirstRowSection() ? 1 : 0)
     }
     
     func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
@@ -32,17 +32,15 @@ class SkillSection: SectionProtocol {
         return cell
     }
     
+    func typeForSection() -> SectionType {
+        return .skills
+    }
+    
     func titleForSection() -> String? {
         return "Skills"
     }
     
-    func viewForSection() -> UIView? {
-        let header = SectionHeaderView()
-        header.set(with: self)
-        return header
-    }
-    
-    func heightForSection() -> CGFloat {
-        return 50
+    func isFirstRowSection() -> Bool {
+        return true
     }
 }

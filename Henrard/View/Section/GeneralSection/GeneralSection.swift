@@ -28,10 +28,14 @@ class GeneralSection: SectionProtocol {
         return cell
     }
     
+    func typeForSection() -> SectionType {
+        return .general
+    }
+    
     func didSelect(indexPath: IndexPath, in tableView: UITableView) {
         let cell = tableView.cellForRow(at: indexPath) as! GeneralCell
-        cell.showOrHideMoreText()
         tableView.beginUpdates()
+        cell.showOrHideMoreText()
         tableView.endUpdates()
     }
 }

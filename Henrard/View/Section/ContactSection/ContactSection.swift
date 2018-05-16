@@ -21,4 +21,8 @@ class ContactSection: SectionProtocol {
     func numberOfRows() -> Int {
         return 1
     }
+    
+    func typeForSection() -> SectionType {
+        return .contact
+    }
 }

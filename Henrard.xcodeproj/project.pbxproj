@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		0EFECA591FD83D018F908443 /* Pods_henrardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4B40FF118BED8E731E703C /* Pods_henrardUITests.framework */; };
 		11164405F5B1141EF0AC469B /* Pods_henrardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474280778730FB98445EE8F6 /* Pods_henrardTests.framework */; };
+		47102CDE20ACA1700000011E /* SectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47102CDD20ACA1700000011E /* SectionCell.xib */; };
+		47102CE020ACA23A0000011E /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47102CDF20ACA23A0000011E /* SectionCell.swift */; };
 		471E4D8220717CAE00E0C70E /* PopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8120717CAE00E0C70E /* PopUpController.swift */; };
-		471E4D8420717E8A00E0C70E /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8320717E8A00E0C70E /* SectionHeaderView.swift */; };
-		471E4D8620717E9F00E0C70E /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */; };
 		471E4D8B2072931600E0C70E /* DetailsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E4D8A2072931600E0C70E /* DetailsPopUpViewController.swift */; };
 		471E4D8D207294D800E0C70E /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471E4D8C207294D800E0C70E /* PopUp.storyboard */; };
 		474C5BDF209E2F9E0015577D /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C5BDE209E2F9E0015577D /* DeviceUtils.swift */; };
@@ -100,9 +100,9 @@
 
 /* Begin PBXFileReference section */
 		1034280A6ED6567F07A85E73 /* Pods-henrardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-henrardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-henrardTests/Pods-henrardTests.release.xcconfig"; sourceTree = "<group>"; };
+		47102CDD20ACA1700000011E /* SectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionCell.xib; sourceTree = "<group>"; };
+		47102CDF20ACA23A0000011E /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		471E4D8120717CAE00E0C70E /* PopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpController.swift; sourceTree = "<group>"; };
-		471E4D8320717E8A00E0C70E /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
-		471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		471E4D8A2072931600E0C70E /* DetailsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPopUpViewController.swift; sourceTree = "<group>"; };
 		471E4D8C207294D800E0C70E /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
 		474280778730FB98445EE8F6 /* Pods_henrardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_henrardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +213,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47102CDC20ACA1650000011E /* SectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				47102CDF20ACA23A0000011E /* SectionCell.swift */,
+				47102CDD20ACA1700000011E /* SectionCell.xib */,
+			);
+			path = SectionCell;
+			sourceTree = "<group>";
+		};
 		471E4D872072918C00E0C70E /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +252,7 @@
 		479439722061AEE400C3C868 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				47102CDC20ACA1650000011E /* SectionCell */,
 				479A270B20AA15680015572F /* ContactCell */,
 				4794399A2065CE0300C3C868 /* LanguageCell */,
 				4794397C2062F92D00C3C868 /* SkillCell */,
@@ -562,8 +572,6 @@
 			children = (
 				47FCBF30206054D10014F2A4 /* MainHeaderView.swift */,
 				47FCBF32206054DB0014F2A4 /* MainHeaderView.xib */,
-				471E4D8320717E8A00E0C70E /* SectionHeaderView.swift */,
-				471E4D8520717E9F00E0C70E /* SectionHeaderView.xib */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -743,6 +751,7 @@
 				479A270D20AA15890015572F /* ContactCell.xib in Resources */,
 				47FCBF35206055B30014F2A4 /* Banner.xcassets in Resources */,
 				474C5BE1209E6AC30015577D /* MainFooterView.xib in Resources */,
+				47102CDE20ACA1700000011E /* SectionCell.xib in Resources */,
 				47FCBF1C205F16630014F2A4 /* properties.plist in Resources */,
 				479439822062F98600C3C868 /* SkillCollectionCell.xib in Resources */,
 				4794398C2064504E00C3C868 /* Technology.xcassets in Resources */,
@@ -755,7 +764,6 @@
 				479439742061AEF800C3C868 /* GeneralCell.xib in Resources */,
 				47FCBED2205EFC2D0014F2A4 /* Main.storyboard in Resources */,
 				479439992065CB4F00C3C868 /* Flag.xcassets in Resources */,
-				471E4D8620717E9F00E0C70E /* SectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,7 +947,6 @@
 				479983F7206AACAC00BC3227 /* Segue.swift in Sources */,
 				479439952065C90300C3C868 /* ImageExtension.swift in Sources */,
 				47FCBF0E205EFFAB0014F2A4 /* Skill.swift in Sources */,
-				471E4D8420717E8A00E0C70E /* SectionHeaderView.swift in Sources */,
 				47FCBF3B206058EF0014F2A4 /* ViewExtension.swift in Sources */,
 				471E4D8220717CAE00E0C70E /* PopUpController.swift in Sources */,
 				47FCBF05205EFDF30014F2A4 /* PlistReader.swift in Sources */,
@@ -950,6 +957,7 @@
 				479439792061B1B500C3C868 /* GeneralSectionRow.swift in Sources */,
 				479A270820AA13340015572F /* ContactSection.swift in Sources */,
 				47FCBF17205F0C7E0014F2A4 /* Skill+CodingKey.swift in Sources */,
+				47102CE020ACA23A0000011E /* SectionCell.swift in Sources */,
 				47FCBF09205EFE2F0014F2A4 /* Developer.swift in Sources */,
 				479439A5206AA99400C3C868 /* WelcomeViewController.swift in Sources */,
 				474C5BE4209E6AE40015577D /* MainFooterView.swift in Sources */,

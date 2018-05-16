@@ -10,11 +10,11 @@ import UIKit
 import MXParallaxHeader
 
 class MainViewController: UIViewController, MXParallaxHeaderDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
 
     let parallaxMinimumHeight: CGFloat = 85
     let parallaxHeight: CGFloat = 300
-    var tableView: UITableView!
-    var scrollView: MXScrollView!
 
     var developerViewModel = DeveloperViewModel()
     var headerView = MainHeaderView()
@@ -24,40 +24,27 @@ class MainViewController: UIViewController, MXParallaxHeaderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.midnightBlue
-        self.tableView = UITableView.init(frame: .zero, style: .plain)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.backgroundColor = UIColor.midnightBlue
-        self.tableView.tableFooterView = UIView()
         self.tableView.estimatedRowHeight = 50
+        
+        self.tableView.autoresizingMask = .init(rawValue: 0)
         self.registerCells()
         
         self.headerView.parentViewController = self
 
-        self.scrollView = MXScrollView()
-        self.scrollView.parallaxHeader.view = self.headerView
-        self.scrollView.parallaxHeader.height = self.parallaxHeight
-        self.scrollView.parallaxHeader.mode = .fill
-        self.scrollView.parallaxHeader.minimumHeight = self.parallaxMinimumHeight
-        self.scrollView.parallaxHeader.delegate = self
-        self.scrollView.backgroundColor = UIColor.midnightBlue
-        self.view.addSubview(scrollView)
-        self.scrollView.addSubview(self.tableView)
+        self.tableView.parallaxHeader.view = self.headerView
+        self.tableView.parallaxHeader.height = self.parallaxHeight
+        self.tableView.parallaxHeader.minimumHeight = self.parallaxMinimumHeight
+        self.tableView.parallaxHeader.mode = .fill
+        self.tableView.parallaxHeader.delegate = self
+        
+        self.tableView.tableFooterView = UIView()
+        
         self.initSections()
         self.headerView.setWith(developerViewModel: self.developerViewModel)
         self.tableView.reloadData()
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-        var frame = view.frame
-
-        scrollView.frame = frame
-        scrollView.contentSize = frame.size
-
-        frame.size.height -= scrollView.parallaxHeader.minimumHeight
-        tableView.frame = frame
     }
 
 
@@ -66,7 +53,7 @@ class MainViewController: UIViewController, MXParallaxHeaderDelegate {
         self.sections.append(GeneralSection(developerViewModel: self.developerViewModel))
         
         let skillSection = SkillSection(developerViewModel: self.developerViewModel)
-        skillSection.parentScrollView = self.scrollView
+        skillSection.parentScrollView = self.tableView
         skillSection.parentViewController = self
         self.sections.append(skillSection)
         
@@ -84,6 +71,7 @@ class MainViewController: UIViewController, MXParallaxHeaderDelegate {
         self.tableView.register(UINib(nibName: SkillCell.describe, bundle: nil), forCellReuseIdentifier: SkillCell.describe)
         self.tableView.register(UINib(nibName: LanguageCell.describe, bundle: nil), forCellReuseIdentifier: LanguageCell.describe)
         self.tableView.register(UINib(nibName: ContactCell.describe, bundle: nil), forCellReuseIdentifier: ContactCell.describe)
+        self.tableView.register(UINib(nibName: SectionCell.describe, bundle: nil), forCellReuseIdentifier: SectionCell.describe)
     }
 
     // MARK: MXParallaxDelegate

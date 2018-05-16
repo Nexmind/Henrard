@@ -67,7 +67,6 @@ class MoreInfosPopUpController: UIViewController, PopupContentViewController {
     private func adaptUI() {
         self.view.layoutIfNeeded()
         self.contentHeight = self.contentView.bounds.height + 24
-        var t = ""
     }
     
     

@@ -17,7 +17,7 @@ class SkillCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewData
     // MARK: Variables
     var skillsViewModel = [SkillViewModel]()
 
-    var parentScrollView: MXScrollView? = nil
+    var parentScrollView: UIScrollView? = nil
     var parentViewController: UIViewController? = nil
 
     // MARK: Initialization
@@ -36,6 +36,8 @@ class SkillCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewData
         collectionView!.collectionViewLayout = layout
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.contentInset = UIEdgeInsetsMake(0, 10, 0, 10)
+        
+        self.separatorInset = UIEdgeInsetsMake(0, 0, 0, .greatestFiniteMagnitude)
     }
 
     // MARK: UICollectionViewDelegate + DataSource
