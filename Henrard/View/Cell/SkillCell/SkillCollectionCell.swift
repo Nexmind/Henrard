@@ -29,7 +29,7 @@ class SkillCollectionCell: UICollectionViewCell {
     func set(with skillViewModel: SkillViewModel) {
         self.skillViewModel = skillViewModel
         self.imageContentView.clipsToBounds = true
-        self.imageContentView.border(color: UIColor.wetAsphalt, thickness: 2, round: true)
+        self.imageContentView.border(color: UIColor.pumpkin, thickness: 2, round: true)
         self.imageView.image = skillViewModel.logo?.imageWithInsets(insets: UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15))
         self.imageView.clipsToBounds = true
         self.imageView.backgroundColor = UIColor.white

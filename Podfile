@@ -6,8 +6,7 @@ target 'henrard' do
   use_frameworks!
   pod "MXParallaxHeader"
   pod "Kingfisher"
-  pod "SkeletonView"
-
+  
   target 'henrardTests' do
     inherit! :search_paths
     # Pods for testing

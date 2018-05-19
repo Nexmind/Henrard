@@ -8,25 +8,33 @@
 
 import UIKit
 
-class GeneralSection: Section, SectionProtocol {
+class GeneralSection: SectionProtocol {
 
     var developerViewModel: DeveloperViewModel
 
     init(developerViewModel: DeveloperViewModel) {
         self.developerViewModel = developerViewModel
-        super.init(type: .general)
     }
 
     // MARK: SectionProtocol
-    override func numberOfRows() -> Int {
+    func numberOfRows() -> Int {
         return GeneralSectionRowType.count
     }
 
-    override func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
+    func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GeneralCell.describe) as! GeneralCell
         cell.selectionStyle = .none
         cell.set(with: self.developerViewModel, rowNumber: row)
-
         return cell
+    }
+    
+    func typeForSection() -> SectionType {
+        return .general
+    }
+    
+    func didSelect(indexPath: IndexPath, in tableView: UITableView) {
+        let cell = tableView.cellForRow(at: indexPath) as! GeneralCell
+        cell.showOrHideMoreText()
+        tableView.reloadData()
     }
 }

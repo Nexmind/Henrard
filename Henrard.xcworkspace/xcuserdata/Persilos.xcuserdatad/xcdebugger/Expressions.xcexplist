@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Authentication.completeToken.getter:Authentication.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.completeToken">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FeatureSection.didSelect(indexPath:in:):FeatureSection.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.parentViewController.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

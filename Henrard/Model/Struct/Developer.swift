@@ -18,7 +18,7 @@ struct Developer: Decodable {
     var speciality: Technology
     var skills: [Skill]
     var languages: [Language]
-    
+
     init() {
         self.id = 0
         self.name = ""
@@ -43,5 +43,19 @@ struct Developer: Decodable {
         self.speciality = Technology.build(value: (try? values.decode(String.self, forKey: .speciality)) ?? "")
         self.skills = (try? values.decode([Skill].self, forKey: .skills)) ?? self.skills
         self.languages = (try? values.decode([Language].self, forKey: .languages)) ?? self.languages
+
+        self.orderSkills()
+    }
+
+    mutating func orderSkills() {
+        let tempSkills = skills.sorted(by: { skill1, skill2 -> Bool in
+            if skill2.technology == self.speciality {
+                return false
+            } else {
+                return skill1.level > skill2.level
+            }
+        })
+
+        self.skills = tempSkills
     }
 }

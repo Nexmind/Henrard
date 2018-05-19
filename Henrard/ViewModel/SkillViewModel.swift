@@ -33,19 +33,15 @@ class SkillViewModel {
             return #imageLiteral(resourceName: "logo_jhipster")
         case .git:
             return #imageLiteral(resourceName: "logo_git")
+        case .aws:
+            return #imageLiteral(resourceName: "logo_aws")
         case .none:
             return nil
         }
     }
 
     var colorLevel: UIColor {
-        switch(self.skill.level) {
-        case .basic: return UIColor.wetAsphalt
-        case .medium: return UIColor.amethyst
-        case .senior: return UIColor.peterRiver
-        case .masterRace: return UIColor.nephritis
-        case .none: return UIColor.wetAsphalt
-        }
+        return UIColor.wetAsphalt
     }
     
     var textLevel: String {
@@ -56,6 +52,10 @@ class SkillViewModel {
         case .masterRace: return "Real expert"
         case .none: return ""
         }
+    }
+    
+    var description: String {
+        return self.skill.description
     }
 
     var name: String {

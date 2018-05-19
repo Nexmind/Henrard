@@ -7,24 +7,40 @@
 //
 
 import UIKit
+import MXParallaxHeader
 
-class SkillSection: Section, SectionProtocol {
+class SkillSection: SectionProtocol {
 
     var developerViewModel: DeveloperViewModel
-
+    var parentScrollView: UIScrollView? = nil
+    var parentViewController: UIViewController? = nil
+    
     init(developerViewModel: DeveloperViewModel) {
         self.developerViewModel = developerViewModel
-        super.init(type: .general)
-        self.title = "Skills"
     }
 
     // MARK: SectionProtocol
-    override func numberOfRows() -> Int {
-        return 1
+    func numberOfRows() -> Int {
+        return 1 + (isFirstRowSection() ? 1 : 0)
     }
-    override func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
+    
+    func cellFor(row: Int, in tableView: UITableView) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SkillCell.describe) as! SkillCell
         cell.skillsViewModel = self.developerViewModel.skills
+        cell.parentScrollView = self.parentScrollView
+        cell.parentViewController = self.parentViewController
         return cell
+    }
+    
+    func typeForSection() -> SectionType {
+        return .skills
+    }
+    
+    func titleForSection() -> String? {
+        return "Skills"
+    }
+    
+    func isFirstRowSection() -> Bool {
+        return true
     }
 }

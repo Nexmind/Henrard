@@ -19,13 +19,14 @@ class LanguageCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = UIColor.cloud
     }
 
     func set(with languageViewModel: LanguageViewModel) {
         self.languageViewModel = languageViewModel
         self.selectionStyle = .none
         self.labelLevel.text = languageViewModel.textLevel
-        self.labelLevel.textColor = UIColor.peterRiver
+        self.labelLevel.textColor = UIColor.blackGrey
         self.imageFlag.image = languageViewModel.flag
     }
 }

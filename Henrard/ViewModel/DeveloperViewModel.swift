@@ -75,5 +75,9 @@ class DeveloperViewModel {
         }
     }
     
+    var isFill: Bool {
+        return !(self.developer.id == 0)
+    }
+    
     
 }

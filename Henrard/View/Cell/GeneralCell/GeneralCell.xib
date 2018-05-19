@@ -19,35 +19,51 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnB-yb-LvE">
-                        <rect key="frame" x="16" y="12" width="110" height="21"/>
+                        <rect key="frame" x="16" y="12" width="107" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="107" id="Lxt-sX-9yy"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <color key="textColor" red="0.22030963827838823" green="0.22030963827838823" blue="0.22030963827838823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3T-zB-Rm4">
-                        <rect key="frame" x="134" y="12" width="225" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="225" id="fet-oE-2bQ"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3T-zB-Rm4">
+                        <rect key="frame" x="131" y="12" width="212" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.2203096383" green="0.2203096383" blue="0.2203096383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron" translatesAutoresizingMaskIntoConstraints="NO" id="MuE-ge-nQC">
+                        <rect key="frame" x="351" y="17" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="4Gu-ME-Xzh"/>
+                            <constraint firstAttribute="height" constant="12" id="SIa-0F-eHX"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="D3T-zB-Rm4" secondAttribute="trailing" constant="16" id="3KF-ur-Uj8"/>
                     <constraint firstItem="D3T-zB-Rm4" firstAttribute="top" secondItem="r6J-aL-g6Y" secondAttribute="top" constant="12" id="6bZ-ga-4me"/>
+                    <constraint firstAttribute="trailing" secondItem="MuE-ge-nQC" secondAttribute="trailing" constant="12" id="7B4-eX-xvG"/>
+                    <constraint firstItem="MuE-ge-nQC" firstAttribute="centerY" secondItem="D3T-zB-Rm4" secondAttribute="centerY" id="HKO-AQ-xqe"/>
                     <constraint firstItem="bnB-yb-LvE" firstAttribute="top" secondItem="r6J-aL-g6Y" secondAttribute="top" constant="12" id="OO8-dK-Xfv"/>
                     <constraint firstItem="D3T-zB-Rm4" firstAttribute="leading" secondItem="bnB-yb-LvE" secondAttribute="trailing" constant="8" id="OcI-Qj-gMr"/>
                     <constraint firstAttribute="bottom" secondItem="D3T-zB-Rm4" secondAttribute="bottom" constant="10.5" id="WwM-Y6-DiJ"/>
+                    <constraint firstItem="MuE-ge-nQC" firstAttribute="leading" secondItem="D3T-zB-Rm4" secondAttribute="trailing" constant="8" id="aBa-w5-t2O"/>
                     <constraint firstItem="bnB-yb-LvE" firstAttribute="leading" secondItem="r6J-aL-g6Y" secondAttribute="leading" constant="16" id="nf4-wG-1tz"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="chevron" destination="MuE-ge-nQC" id="3bl-KV-RZ7"/>
+                <outlet property="cstChevronToRight" destination="7B4-eX-xvG" id="xJB-EZ-GWp"/>
+                <outlet property="cstHeightChevron" destination="SIa-0F-eHX" id="BZE-WQ-3Hg"/>
+                <outlet property="cstWidthChevron" destination="4Gu-ME-Xzh" id="ADW-2F-487"/>
                 <outlet property="labelTitle" destination="bnB-yb-LvE" id="jJb-Ae-Zth"/>
                 <outlet property="labelValue" destination="D3T-zB-Rm4" id="YPk-hL-56N"/>
             </connections>
             <point key="canvasLocation" x="-27.5" y="85"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="chevron" width="32" height="32"/>
+    </resources>
 </document>
