@@ -11,10 +11,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MainViewController.tableView(_:cellForRowAt:):MainViewController+tableView.swift">
+         contextName = "FeatureSection.didSelect(indexPath:in:):FeatureSection.swift">
          <PersistentStrings>
             <PersistentString
-               value = "section.isFirstRowSection?()">
+               value = "self.parentViewController.navigationController">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

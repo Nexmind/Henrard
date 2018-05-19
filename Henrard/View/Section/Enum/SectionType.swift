@@ -12,6 +12,7 @@ import Foundation
     case general
     case skills
     case languages
+    case features
     case contact
     case none
 }

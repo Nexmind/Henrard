@@ -34,8 +34,7 @@ class GeneralSection: SectionProtocol {
     
     func didSelect(indexPath: IndexPath, in tableView: UITableView) {
         let cell = tableView.cellForRow(at: indexPath) as! GeneralCell
-        tableView.beginUpdates()
         cell.showOrHideMoreText()
-        tableView.endUpdates()
+        tableView.reloadData()
     }
 }

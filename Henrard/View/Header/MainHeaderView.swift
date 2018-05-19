@@ -18,7 +18,8 @@ class MainHeaderView: UIView {
     @IBOutlet weak var labelSpeciality: UILabel!
     @IBOutlet weak var opaqueView: UIView!
     @IBOutlet weak var backButton: UIButton!
-
+    @IBOutlet weak var cstBackButtonToTop: NSLayoutConstraint!
+    
     // MARK: Variables
     var view: UIView!
     var parentViewController: UIViewController? = nil
@@ -58,6 +59,12 @@ class MainHeaderView: UIView {
         self.backButton.round()
         self.backButton.layer.borderColor = UIColor.pumpkin.cgColor
         self.backButton.layer.borderWidth = 1
+        
+        if Display.typeIsLike == .iphoneX {
+            self.cstBackButtonToTop.constant = 70
+        } else {
+            self.cstBackButtonToTop.constant = 50
+        }
 
         addSubview(view)
     }

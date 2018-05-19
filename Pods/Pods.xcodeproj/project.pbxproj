@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -76,25 +76,25 @@
 		0018C94BE18F6BEE1C429C7FC54E6ABC /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
 		020B9F6E34FE8C1BC6AC6143C803CDAE /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
 		032D2514AFD68F3F30EBD7B7FCADD7C8 /* Pods-henrardTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-henrardTests-frameworks.sh"; sourceTree = "<group>"; };
-		0663AE6410EF318D1C6FD94DEBB77F6B /* Pods-henrardTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-henrardTests.modulemap"; sourceTree = "<group>"; };
+		0663AE6410EF318D1C6FD94DEBB77F6B /* Pods-henrardTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-henrardTests.modulemap"; sourceTree = "<group>"; };
 		06A4B5E2C4E441D0D12396C35FD9FC91 /* MXScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollView.h; path = MXParallaxHeader/MXScrollView.h; sourceTree = "<group>"; };
-		06EAEA35414CD20B44DAA7E66BBC8A13 /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EAEA35414CD20B44DAA7E66BBC8A13 /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MXParallaxHeader.framework; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08287109B59C35D4DD8B1A3F973C9DFF /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
 		09489F134B8D3F8EB9554E5D6C0B22DE /* MXParallaxHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXParallaxHeader.h; path = MXParallaxHeader/MXParallaxHeader.h; sourceTree = "<group>"; };
 		0E1E18278F224229E9795953B7003B65 /* Pods-henrard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-henrard-acknowledgements.plist"; sourceTree = "<group>"; };
-		0FEDC7BD0E4CD86F52881C7A8FB64DCF /* Pods_henrardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_henrardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FEDC7BD0E4CD86F52881C7A8FB64DCF /* Pods_henrardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_henrardTests.framework; path = "Pods-henrardTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		105699EB4C8FCFEBCA6A58EBA855A418 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A0C682679987FC4B05A66A3AD053E3 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
 		15458A263C78C4C3CF4F30861773789D /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
 		167503C28E5339E2C719B9DBB8CB5938 /* Pods-henrardTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-henrardTests-umbrella.h"; sourceTree = "<group>"; };
 		16D976EF5AE471D50FAAC9C3BFDCC30F /* Pods-henrardUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-henrardUITests-frameworks.sh"; sourceTree = "<group>"; };
 		219B7F45F22930B0D91E04461AD17B04 /* Pods-henrardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-henrardTests.debug.xcconfig"; sourceTree = "<group>"; };
-		21E3F1B14F7938A60EEEFE0D020E0726 /* Pods_henrard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_henrard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E3F1B14F7938A60EEEFE0D020E0726 /* Pods_henrard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_henrard.framework; path = "Pods-henrard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		261396C4C69F1BA8039D4169F5C158A0 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
-		264083761E7F81026ADED5732E19404A /* Pods_henrardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_henrardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		264083761E7F81026ADED5732E19404A /* Pods_henrardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_henrardUITests.framework; path = "Pods-henrardUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E6F449477326F5C32159661FE5C145 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
 		3532164C2ADD54F59E3105BFEA07304A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C254634F0D63CB1975F25A013C3D484 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		3C254634F0D63CB1975F25A013C3D484 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
 		3C738AFE1A5A6E633D33997A87F86A82 /* Pods-henrardUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-henrardUITests-dummy.m"; sourceTree = "<group>"; };
 		3D1B22F05CCBD3551785E03F87C500A2 /* MXScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollViewController.h; path = MXParallaxHeader/MXScrollViewController.h; sourceTree = "<group>"; };
 		3D3464ACC8A3E218B61A6103080FC34F /* Pods-henrardTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-henrardTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		484FDB2867E5AFC66F4A195D2F2DB846 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
 		49D0B9271CBDC6044054F1CB12135D48 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
 		4B9EA6C4E3B526B571168859E55A156C /* Pods-henrard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-henrard-umbrella.h"; sourceTree = "<group>"; };
-		53B82F31E066D40A53FE2AC749C339F3 /* Pods-henrardUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-henrardUITests.modulemap"; sourceTree = "<group>"; };
+		53B82F31E066D40A53FE2AC749C339F3 /* Pods-henrardUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-henrardUITests.modulemap"; sourceTree = "<group>"; };
 		548587FF26053460D92D95A832EC6B2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A877215A2F92793C35B3CE2BFB88536 /* Pods-henrardUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-henrardUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5BCA94E8FB583CA14EA846F66DD4D890 /* Pods-henrardUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-henrardUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -121,12 +121,12 @@
 		89AFF4DED37B29B4F07AFD610D204A56 /* Pods-henrard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-henrard.release.xcconfig"; sourceTree = "<group>"; };
 		8B7FBACB9CDD9762FCF420E3675DEE56 /* Pods-henrardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-henrardUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E03F00C8EDB3CD63124A6644D96D932 /* Pods-henrardUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-henrardUITests-umbrella.h"; sourceTree = "<group>"; };
-		8F8028B1FAFB72C42F970C14C405EAB4 /* MXParallaxHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MXParallaxHeader.modulemap; sourceTree = "<group>"; };
+		8F8028B1FAFB72C42F970C14C405EAB4 /* MXParallaxHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MXParallaxHeader.modulemap; sourceTree = "<group>"; };
 		909297060EBBEF3F320BEBA06D3C4123 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91D3B89FF2CEFF8DF5AE72E45489BB39 /* Pods-henrard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-henrard-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99D6698C0A629561C4D2DC5208178ACE /* Pods-henrard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-henrard.debug.xcconfig"; sourceTree = "<group>"; };
-		9D8F4363F606C23632F42ABCE2A23DD3 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8F4363F606C23632F42ABCE2A23DD3 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA4DE758D7E43B40E41C69FD017E951 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
 		9EA6BA850765336465D68DE03AA7CF84 /* MXScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollView.m; path = MXParallaxHeader/MXScrollView.m; sourceTree = "<group>"; };
 		A2A45E771D00FF8775915EFFCB5B22C8 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		F46EFC5CDAF57A92A7B136FFD3525675 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		F6E0D677F0CDEF525F00CD55B64421BC /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/ImageModifier.swift; sourceTree = "<group>"; };
 		FDEF9D230ACA2696600174E55D1289FC /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
-		FE8E4650F2AB3D2BA19FFFA6B1AFBE43 /* Pods-henrard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-henrard.modulemap"; sourceTree = "<group>"; };
+		FE8E4650F2AB3D2BA19FFFA6B1AFBE43 /* Pods-henrard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-henrard.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +340,7 @@
 				81CB6AE32B59CBFF44CAB955C091C6A2 /* UIButton+Kingfisher.swift */,
 				6BFBEB00407521F8D4F61345976E429C /* Support Files */,
 			);
+			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -384,6 +385,7 @@
 				46546AE126DA03F00C65EEABF00F6B87 /* MXScrollViewController.m */,
 				1229351C970C5C592730DF1EF718DBB8 /* Support Files */,
 			);
+			name = MXParallaxHeader;
 			path = MXParallaxHeader;
 			sourceTree = "<group>";
 		};
@@ -531,7 +533,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -816,7 +818,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
